@@ -1,0 +1,19 @@
+# Meson build directories
+builddir/
+builddir-*/
+
+# Meson subproject
+subprojects/packagecache/
+
+subprojects/bullet3/
+
+# Editor
+.vscode/
+.idea/
+
+# Other common ignored files
+*.o
+*.so
+*.a
+*.pyc
+*.log
