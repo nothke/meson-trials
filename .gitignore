@@ -6,6 +6,8 @@ builddir-*/
 subprojects/packagecache/
 
 subprojects/bullet3/
+subprojects/spdlog-*
+subprojects/fmt-*
 
 # Editor
 .vscode/

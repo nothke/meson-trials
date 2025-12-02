@@ -19,8 +19,12 @@ linalg = bullet.target('LinearMath')
 bullet_includes  = bullet.include_directories('BulletDynamics')
 #cargs = bullet.compile_args() # Not needed?
 
-executable('meson_demo',
+### spdlog ###
+spdlog_dep = dependency('spdlog', required: true)
+
+executable('demo',
   'src/main.cpp',
+  dependencies: [spdlog_dep],
   link_with: [dynamics, collision, linalg],
   include_directories: bullet_includes,
   #cpp_args: cargs,
